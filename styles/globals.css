@@ -2,24 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #212121;
   color: white;
   /* position: relative; */
   margin: 0px;
 }
 
-@media (min-width: 500px) {
-  body {
+#hiden {
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
     display: none;
   }
+  #hiden {
+    display: block;
+    color: #60c689;
+  }
 }
+
 
 .phone-wrapper {
   max-width: 410px;
